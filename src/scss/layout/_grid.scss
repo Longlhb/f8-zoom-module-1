@@ -1,0 +1,62 @@
+@use "../abstract" as abs;
+
+%gutter-padding {
+    padding-left: calc(var(--grid-gutter-x) * 0.5);
+    padding-right: calc(var(--grid-gutter-x) * 0.5);
+}
+
+.item {
+    background-color: #ccc;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.container-fluid {
+    --grid-gutter-x: #{abs.$grid-gutter-width};
+    --grid-gutter-y: 0;
+
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    @extend .container-fluid;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--grid-gutter-x) * 0.5 * -1);
+    margin-right: calc(var(--grid-gutter-x) * 0.5 * -1);
+    margin-top: calc(var(--grid-gutter-y) * -1);
+
+    > * {
+        margin-top: var(--grid-gutter-y);
+        @extend %gutter-padding;
+    }
+}
+
+.col {
+    flex: 1 0 auto;
+}
+
+@each $breakpoint, $dimension in abs.$grid-breakpoints {
+    $max-width: map-get(abs.$container-max-widths, $breakpoint);
+    $infix: if($breakpoint == "xxl", "", "-#{$breakpoint}");
+    $is-XXL: $breakpoint == "xxl";
+    /* #{$breakpoint} */
+    @include abs.make-media-query($dimension, $is-XXL) {
+        .container {
+            max-width: $max-width;
+        }
+
+        @include abs.make-row-columns($infix);
+
+        @include abs.make-column($infix);
+
+        @include abs.make-offset($infix);
+
+        @include abs.make-gutter($infix);
+    }
+}

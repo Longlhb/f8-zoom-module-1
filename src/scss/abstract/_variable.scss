@@ -1,0 +1,45 @@
+// grid-system (max-width)
+$grid-breakpoints: (
+    xxl: 1400px,
+    xl: 1399.98px,
+    lg: 1199.98px,
+    md: 991.98px,
+    sm: 767.98px,
+    xs: 575.98px,
+);
+
+$container-max-widths: (
+    xxl: 1320px,
+    xl: 1140px,
+    lg: 960px,
+    md: 720px,
+    sm: 540px,
+    xs: 100%,
+);
+
+$gutters: (
+    0: 0,
+    1: 0.25,
+    2: 0.5,
+    3: 1,
+    4: 1.5,
+    5: 3,
+);
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 24px !default;
+
+//color:
+$primary-color: #f8ebc9;
+$dark-color: #0e1412;
+$text-color: #beccc7;
+$orange-color: #fd6038;
+$green-color: #017848;
+$white-color: #fff;
+$yellow-color: #fed464;
+$grey-color: #586863;
+$border-color: #dbe1e3;
+
+// font
+$text-font: "Manrope", sans-serif;
+$title-font: "Roboto Slab", serif;
