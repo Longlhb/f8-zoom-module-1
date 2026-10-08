@@ -31,7 +31,7 @@
 }
 
 @mixin make-offset($infix) {
-    @for $i from 1 to var.$grid-columns {
+    @for $i from 0 to var.$grid-columns {
         .offset#{$infix}-#{$i} {
             margin-left: math.div(100%, var.$grid-columns) * $i;
         }

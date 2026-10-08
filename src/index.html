@@ -7,48 +7,66 @@
         <title>Law Firm Website</title>
     </head>
     <body>
-        <div class="wrapper">
+        <div class="wrapper"><%- include("./partials/header.ejs") %></div>
+        <section class="introduction-section">
             <div class="container">
-                <div class="row gy-3 gy-lg-2 gy-md-1 row-cols-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
-                    <div class="col">
-                        <div class="item">item 1</div>
+                <div class="row">
+                    <div class="col-6 col-md-12">
+                        <p class="paragraph-1 paragraph-heading-font">#1 Law Firm in New York</p>
+                        <h1>Where People Meets Personalized Support.</h1>
+                        <p class="paragraph-1">Where every injury is personal. We are a different kind of law firm. Let our small, passionate group of trial lawyers fight for your rights!</p>
+                        <button class="btn primary-btn larg-btn">Get a Consultations</button>
                     </div>
-                    <div class="col">
-                        <div class="item">item 2</div>
-                    </div>
-                    <div class="col col-6">
-                        <div class="item">item 3</div>
-                    </div>
-                    <div class="col">
-                        <div class="item">item 4</div>
-                    </div>
-                    <div class="col">
-                        <div class="item">item 5</div>
-                    </div>
-                    <div class="col">
-                        <div class="item">item 6</div>
-                    </div>
-                    <div class="col">
-                        <div class="item">item 7</div>
-                    </div>
-                    <div class="col">
-                        <div class="item">item 8</div>
-                    </div>
-                    <div class="col">
-                        <div class="item">item 9</div>
-                    </div>
-                    <div class="col">
-                        <div class="item">item 10</div>
-                    </div>
-                    <div class="col">
-                        <div class="item">item 11</div>
-                    </div>
-                    <div class="col">
-                        <div class="item">item 12</div>
+                    <div class="col-6 col-md-12">
+                        <div class="thumb-wrapper">
+                            <div class="intro-wrapper">
+                                <img src="svg/Play.svg" alt="" class="play-img" />
+                                <img src="img/img-text-circle.png" alt="" class="around-cricle" />
+                                <div class="intro-shape"></div>
+                                <div class="img-wrapper">
+                                    <img src="img/index-img-1.png" alt="Introduction Image" class="img-thumb" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="about-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-12">
+                        <div class="about-img-wrapper">
+                            <img src="img/index-img-2.png" alt="" class="about-img-thumb" />
+                        </div>
+                    </div>
+                    <div class="col-5 offset-1 col-md-12 offset-md-0">
+                        <article>
+                            <p class="paragraph-1 paragraph-heading-font text-orange">#About us</p>
+                            <h2 class="text-white">Get the Guidance, Support, and Counsel</h2>
+                            <p class="paragraph-1 text-white">
+                                Every year hundreds of clients choose our firm because of our dedication to advocating for our clients before, during and after closing.
+                            </p>
+                            <div class="row">
+                                <div class="col-4">
+                                    <h3 class="text-white">1782</h3>
+                                    <p class="paragraph text-color">Law Cases</p>
+                                </div>
+                                <div class="col-4">
+                                    <h3 class="text-white">10+</h3>
+                                    <p class="paragraph text-color">Lawyer</p>
+                                </div>
+                                <div class="col-4">
+                                    <h3 class="text-white">98%</h3>
+                                    <p class="paragraph text-color">Happy Clients</p>
+                                </div>
+                            </div>
+                        </article>
+                        <button class="btn primary-btn larg-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
         <script type="module" src="./main.js"></script>
     </body>
 </html>

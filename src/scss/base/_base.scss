@@ -95,3 +95,52 @@ h5 {
     font-size: 14px;
     line-height: 24px;
 }
+
+.paragraph-heading-font {
+    font-family: abs.$title-font;
+}
+
+.paragraph-1,
+.paragraph-2,
+.paragraph-3,
+.paragraph-medium,
+.paragraph-heading-font {
+    color: abs.$dark-color;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.larg-btn {
+    padding: 15px 35px;
+}
+
+.primary-btn {
+    background-color: abs.$orange-color;
+    color: abs.$white-color;
+    transition:
+        background-color 0.2s ease-in-out,
+        color 0.2s ease-in-out;
+}
+
+.primary-btn:hover {
+    background-color: abs.$white-color;
+    color: abs.$dark-color;
+}
+
+.text-orange {
+    color: abs.$orange-color;
+}
+
+.text-white {
+    color: abs.$white-color;
+}
+
+.text-color {
+    color: abs.$text-color;
+}

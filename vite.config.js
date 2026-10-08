@@ -2,6 +2,8 @@ import { defineConfig } from "vite";
 
 import { ViteEjsPlugin } from "vite-plugin-ejs";
 
+import FullReload from "vite-plugin-full-reload";
+
 import path from "path";
 
 export default defineConfig({
@@ -19,5 +21,5 @@ export default defineConfig({
         },
     },
 
-    plugins: [ViteEjsPlugin()],
+    plugins: [ViteEjsPlugin(), FullReload(["**/*.ejs"])],
 });
