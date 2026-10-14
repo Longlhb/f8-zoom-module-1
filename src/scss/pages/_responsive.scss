@@ -1,0 +1,192 @@
+@use "sass:map";
+@use "../abstract/" as abs;
+
+@include abs.make-media-query(map.get(abs.$grid-breakpoints, xl)) {
+    .introduction-section {
+        .thumb-wrapper {
+            margin-top: 70px;
+            justify-content: flex-start;
+            margin-left: 0;
+        }
+    }
+}
+
+@include abs.make-media-query(map.get(abs.$grid-breakpoints, lg)) {
+    .introduction-section {
+        .thumb-wrapper {
+            margin-top: 150px;
+            justify-content: center;
+        }
+
+        .intro-wrapper {
+            width: 100%;
+            max-width: 40rem;
+            height: 47.6rem;
+
+            .other-img {
+                right: -50px;
+                top: 11.1rem;
+            }
+        }
+
+        p.paragraph-1 {
+            width: 100%;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+            width: 100%;
+            font-size: 4rem;
+        }
+
+        button {
+            margin-top: 30px;
+        }
+
+        .intro-wrapper {
+            width: 40rem;
+            height: 40.6rem;
+            background-color: abs.$green-color;
+            position: relative;
+        }
+
+        .intro-shape {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 10rem;
+            height: 35.2rem;
+            background-color: abs.$yellow-color;
+        }
+
+        .img-wrapper {
+            position: absolute;
+            width: 26rem;
+            height: 40.6rem;
+            left: 7rem;
+            aspect-ratio: 260/406;
+        }
+
+        .other-img {
+            width: 120px;
+            height: 100px;
+            display: block;
+        }
+    }
+
+    .about-section {
+        .about-img-wrapper {
+            width: 47rem;
+            height: 47rem;
+            aspect-ratio: 1/1;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+        }
+
+        p.paragraph-1 {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        h2 {
+            margin-bottom: 18px;
+            width: 100%;
+            font-size: 3.2rem;
+        }
+
+        button {
+            margin-top: 40px;
+            padding: 10px 20px;
+        }
+    }
+
+    .service-section {
+        padding-bottom: 3rem;
+        .card-wrapper {
+            button {
+                bottom: 4rem;
+            }
+        }
+    }
+
+    .features-section {
+        gap: 2rem;
+
+        .feature-info {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature-1 {
+            .row {
+                flex-direction: column-reverse;
+            }
+
+            .feature-info {
+                margin-bottom: 4rem;
+            }
+        }
+
+        .feature-2 {
+            button {
+                margin-bottom: 4rem;
+            }
+        }
+    }
+}
+
+@include abs.make-media-query(map.get(abs.$grid-breakpoints, md)) {
+    .introduction-section {
+        .thumb-wrapper {
+            margin-top: 150px;
+            justify-content: center;
+        }
+    }
+
+    .about-section {
+        .about-img-wrapper {
+            display: none;
+        }
+    }
+
+    .service-section {
+        .card-wrapper {
+            button {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 150px;
+                padding-right: 150px;
+                min-width: 458px;
+                left: calc((100% - 458px) / 2);
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .features-section {
+        .feature-info {
+            p {
+                width: 100%;
+            }
+
+            h2 {
+                width: 100%;
+            }
+        }
+    }
+
+    .team-section {
+        .team-wrapper {
+            button {
+                visibility: visible;
+                opacity: 1;
+                bottom: 4rem;
+            }
+        }
+    }
+}

@@ -1,4 +1,5 @@
 /* Grid system */
+@use "sass:map";
 @use "../abstract" as abs;
 
 %gutter-padding {
@@ -43,8 +44,12 @@
 }
 
 @each $breakpoint, $dimension in abs.$grid-breakpoints {
-    $max-width: map-get(abs.$container-max-widths, $breakpoint);
-    $infix: if($breakpoint == "xxl", "", "-#{$breakpoint}");
+    $max-width: map.get(abs.$container-max-widths, $breakpoint);
+    $infix: "";
+
+    @if $breakpoint != "xxl" {
+        $infix: "-#{$breakpoint}";
+    }
     $is-XXL: $breakpoint == "xxl";
     /* #{$breakpoint} */
     @include abs.make-media-query($dimension, $is-XXL) {

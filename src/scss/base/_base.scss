@@ -10,7 +10,7 @@ html {
 
 body {
     font-family: "Manrope", sans-serif;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 button,
@@ -45,55 +45,55 @@ h6 {
 }
 
 h1 {
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 6rem;
+    line-height: 7rem;
     font-weight: 800;
 }
 
 h2 {
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 4.2rem;
+    line-height: 5.2rem;
 }
 
 h3 {
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
 }
 
 h4 {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
 }
 
 h5 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 2rem;
+    line-height: 3rem;
 }
 
 .paragraph-1,
 .paragraph-2,
 .paragraph-3 {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 3rem;
 }
 
 .paragraph-medium {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 3rem;
 }
 
 .paragraph-2 {
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
 }
 
 .paragraph-3 {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
 }
 
 .paragraph-heading-font {
@@ -111,7 +111,7 @@ h5 {
 .btn {
     display: inline-flex;
     align-items: flex-start;
-    gap: 10px;
+    gap: 1rem;
     padding: 10px 20px;
     text-align: center;
 }
@@ -120,12 +120,42 @@ h5 {
     padding: 15px 35px;
 }
 
+.small-btn {
+    padding: 5px 10px;
+}
+
+.white-btn {
+    background-color: abs.$white-color;
+    color: abs.$dark-color;
+    transition:
+        background-color 0.2s ease-in-out,
+        color 0.2s ease-in-out;
+}
+
+.white-btn:hover {
+    background-color: abs.$orange-color;
+    color: abs.$white-color;
+}
+
 .primary-btn {
     background-color: abs.$orange-color;
     color: abs.$white-color;
     transition:
         background-color 0.2s ease-in-out,
         color 0.2s ease-in-out;
+}
+
+.dark-btn {
+    background-color: #313d39;
+    color: abs.$white-color;
+    transition:
+        background-color 0.2s ease-in-out,
+        color 0.2s ease-in-out;
+}
+
+.dark-btn:hover {
+    background-color: abs.$white-color;
+    color: abs.$dark-color;
 }
 
 .primary-btn:hover {
@@ -141,6 +171,10 @@ h5 {
     color: abs.$white-color;
 }
 
+.grey-color {
+    color: abs.$grey-color;
+}
+
 .text-color {
-    color: abs.$text-color;
+    color: #beccc7;
 }
