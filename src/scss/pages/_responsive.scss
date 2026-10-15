@@ -137,6 +137,13 @@
             }
         }
     }
+
+    .story-section {
+        article {
+            max-width: 100%;
+            margin-bottom: 5rem;
+        }
+    }
 }
 
 @include abs.make-media-query(map.get(abs.$grid-breakpoints, md)) {
@@ -187,6 +194,14 @@
                 opacity: 1;
                 bottom: 4rem;
             }
+        }
+    }
+
+    .gallery-section {
+        .data-field {
+            width: 100%;
+            flex-direction: column;
+            gap: 4rem;
         }
     }
 }
