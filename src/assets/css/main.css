@@ -2020,7 +2020,7 @@ section {
   height: 64px;
   border-radius: 50%;
   aspect-ratio: 1/1;
-  background: url(../img/feedback-user-1.png) lightgray -18.2px -8.648px/161.176% 241.765% no-repeat;
+  background: url(/img/feedback-user-1.png) lightgray -18.2px -8.648px/161.176% 241.765% no-repeat;
 }
 .testimonial-section .feedback-detail:hover {
   box-shadow: 0 20px 70px 0 rgba(14, 20, 18, 0.07);
