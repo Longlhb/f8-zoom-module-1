@@ -1885,7 +1885,7 @@ section {
   color: #fff;
   cursor: pointer;
 }
-.service-section button {
+.service-section a {
   text-align: center;
   margin-top: 5rem;
 }
