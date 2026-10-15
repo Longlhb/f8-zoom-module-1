@@ -7,7 +7,7 @@ import FullReload from "vite-plugin-full-reload";
 import path from "path";
 
 export default defineConfig({
-    base: process.env.NODE_ENV === "production" ? "/f8-zoom-module-1" : "/",
+    base: process.env.NODE_ENV === "production" ? "/f8-zoom-module-1/" : "/",
     root: "src",
     publicDir: "../public",
     build: {
