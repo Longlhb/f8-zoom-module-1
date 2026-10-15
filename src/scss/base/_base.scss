@@ -146,7 +146,7 @@ h5 {
 }
 
 .dark-btn {
-    background-color: #313d39;
+    background-color: abs.$dark-color;
     color: abs.$white-color;
     transition:
         background-color 0.2s ease-in-out,

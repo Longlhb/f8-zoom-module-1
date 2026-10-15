@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <%- include("./partials/head.ejs") %>
+        <title>Law Firm</title>
+    </head>
+    <body>
+        <%- include("./partials/header.ejs") %>
+        <main>
+            <section class="contact-heading">
+                <div class="container">
+                    <h1>Contact With Justice Law Firm</h1>
+                    <p class="paragraph-1 grey-color">
+                        At The Justice Law Firm, our clients are our top priority. Fueled by passion and determination, we have a reputation for legal excellence in North Carolina. Our firm was
+                        established in 1907 and we’ve been delivering best.
+                    </p>
+                </div>
+            </section>
+            <section class="contact-form-section">
+                <div class="container">
+                    <div class="row row-cols-2 row-cols-md-1 g-4">
+                        <div class="col">
+                            <div class="form-group">
+                                <p class="paragraph-medium">Name</p>
+                                <input type="text" placeholder="Your first name" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <p class="paragraph-medium">Name</p>
+                                <input type="text" placeholder="Your last name" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <p class="paragraph-medium">Phone</p>
+                                <input type="tel" placeholder="Your phone here" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <p class="paragraph-medium">Email</p>
+                                <input type="email" placeholder="Your email here" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <p class="paragraph-medium">Service</p>
+                                <input type="text" placeholder="Practice Area" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <p class="paragraph-medium">Lawyer</p>
+                                <input type="text" placeholder="Specific Attorney" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-area">
+                        <p class="paragraph-medium">Message</p>
+                        <textarea name="" id="" placeholder="Write your message"></textarea>
+                    </div>
+                    <button class="primary-btn larg-btn">Send Message</button>
+                </div>
+            </section>
+        </main>
+        <%- include("./partials/footer.ejs") %>
+    </body>
+</html>

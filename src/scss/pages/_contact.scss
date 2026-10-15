@@ -1,0 +1,65 @@
+@use "../abstract" as abs;
+
+.contact-heading {
+    padding-bottom: 2rem;
+    h1,
+    p {
+        width: 100%;
+        max-width: 67rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.contact-form-section {
+    padding-top: 2rem;
+    padding-bottom: 15rem;
+    text-align: end;
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        p {
+            text-align: start;
+        }
+
+        input {
+            width: 100%;
+            padding: 2rem;
+            border: 1px solid #beccc7;
+            outline: none;
+        }
+
+        input:focus {
+            outline: 1px solid abs.$orange-color;
+        }
+    }
+
+    .text-area {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        p {
+            text-align: start;
+        }
+
+        textarea {
+            width: 100%;
+            height: 330px;
+            outline: none;
+            padding: 2rem;
+            border: 1px solid #beccc7;
+        }
+
+        textarea:focus {
+            outline: 1px solid abs.$orange-color;
+        }
+    }
+
+    button {
+        margin-top: 5rem;
+    }
+}

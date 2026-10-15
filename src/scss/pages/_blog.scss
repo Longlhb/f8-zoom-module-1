@@ -1,0 +1,70 @@
+@use "../abstract" as abs;
+
+.blog-heading-section {
+    h1 {
+        width: 100%;
+        max-width: 57rem;
+    }
+
+    .filter-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 3.8rem;
+    }
+
+    .filter-item:hover {
+        background-color: abs.$orange-color;
+        color: abs.$white-color;
+        cursor: pointer;
+    }
+}
+
+.cta-section {
+    .blog-form {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3.8rem;
+
+        input {
+            padding: 15px;
+            min-width: 40rem;
+            border: none;
+            outline: none;
+        }
+    }
+
+    span {
+        color: abs.$yellow-color;
+    }
+}
+
+.blog-section-2 {
+    padding-bottom: 15rem;
+
+    .panigation {
+        margin-top: 6rem;
+    }
+
+    .panigation-list {
+        display: flex;
+        gap: 1.6rem;
+        justify-content: center;
+
+        li {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li:hover {
+            background-color: abs.$orange-color;
+            color: abs.$white-color;
+            cursor: pointer;
+        }
+    }
+}

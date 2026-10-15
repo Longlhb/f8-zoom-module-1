@@ -1,0 +1,25 @@
+@use "sass:map";
+@use "../abstract/" as abs;
+
+/* practice page css */
+.practice-introduction-section {
+    background-color: abs.$primary-color;
+    display: flex;
+    text-align: center;
+    padding-bottom: 10rem;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    p,
+    h1 {
+        width: 100%;
+        max-width: 67rem;
+    }
+}
+.service-section {
+    padding-bottom: 20rem;
+}
